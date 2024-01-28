@@ -1,0 +1,141 @@
+.top_catalog {
+    height: 400px;
+    background-image: url(img/top_back_catalog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top_title_catalog {
+    margin-top: 127px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.top_catalog_block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 41px;
+}
+
+.top_catalog_links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.top_catalog_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.top_catalog_link_first::after {
+    content: "/";
+    padding-left: 8px;
+}
+
+.top_catalog_link:hover {
+    text-decoration-line: underline;
+    color: #888888;
+}
+
+.form-select {
+    width: 288px;
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 14px;
+    background-image: url(img/Polygon_1.svg);
+    background-repeat: no-repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.more {
+    margin-top: 32px;
+
+    &_link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-bottom: 64px;
+    }
+
+    &_link:hover {
+        text-decoration-line: none;
+        color: #888888;
+    }
+}
+
+// Стили для планшетной версии сайта_Каталог
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    .for {
+        &_item {
+            height: 268px;
+        }
+    }
+
+    .product_content {
+        gap: 39px 29px;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .product {
+        width: 345px;
+    }
+}
+
+// Стили для мобильной версии сайта_Каталог
+@media (max-width: 767px) {
+
+    .top_title_catalog {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        margin-top: 82px;
+    }
+
+    .top_catalog_block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
+}
